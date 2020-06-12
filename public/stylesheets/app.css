@@ -15,7 +15,7 @@ body {
     min-width: 100%;
     font-family: 'Abel', sans-serif;
     font-size: 14px;
-    background-color: rgba(41, 40, 34, 0.911);
+    background-color: rgba(26, 25, 22, 0.911);
     color: white;
 }
 
@@ -36,9 +36,10 @@ hr{
     text-align: center;
     border-radius: 0;
     height: (20vh - 5vw);
+    width: auto;
     background-color: transparent;
-    padding-top: 16rem;
-    padding-bottom: 16rem;
+    padding-top: 26rem;
+    padding-bottom: 28rem;
     color: black;
 }
 
@@ -60,7 +61,7 @@ hr{
 }
 
 .section-sm{
-    height: 30vh;
+    height: 20vh;
     width: auto;
     border-radius: 1.5%;
 }
