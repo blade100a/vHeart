@@ -1,0 +1,94 @@
+/* overview */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    max-width: 100%;
+    min-width: 100%;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+body {
+    max-width: 100%;
+    min-width: 100%;
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+    background-color: rgba(41, 40, 34, 0.911);
+    color: white;
+}
+
+a { 
+    transition: all 0.3s ease; 
+    text-decoration: none;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+hr{
+    background-color: aliceblue;
+}
+
+.jumbotron{
+    text-align: center;
+    border-radius: 0;
+    height: (20vh - 5vw);
+    background-color: transparent;
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+    color: black;
+}
+
+.jumbotron h1{
+    font-weight: 700;
+}
+
+.jumbotron p{
+    font-size: large;
+    font-weight: 500;
+}
+
+.navbar{
+    background-color: rgba(39, 38, 30, 0.911);
+}
+
+.navbar a{
+    color: rgb(238, 231, 231);
+}
+
+.section-sm{
+    height: 30vh;
+    width: auto;
+    border-radius: 1.5%;
+}
+
+.section{
+    height: 50vh;
+    width: auto;
+    border-radius: 2%;
+}
+
+.section h1{
+    font-weight: 700;
+}
+
+.section p{
+    font-weight: 500;
+    font-size: larger;
+}
+
+.product-img{
+    height: 45vh;
+    width: auto;
+    border-radius: 1.5%;
+}
+
+#intro{
+    background-image: url("/images/pencils.jpg");
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
