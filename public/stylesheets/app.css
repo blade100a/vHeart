@@ -4,7 +4,7 @@ body {
 }
 
 input {
-    width: 90%;
+    width: 85%;
 }
 
 .aContainer{
@@ -17,6 +17,9 @@ input {
     position:relative;
     box-shadow: 0px 0px 28px rgba(0,0,0,.3);
     overflow:hidden;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("/images/jumboCard.jpg") 30 round;
 }
 
 .blackFoot{
@@ -29,7 +32,7 @@ input {
 .btn{
     width:90%;
     background:lightskyblue;
-    padding:5px;
+    padding:8px;
     border:none;
     border-radius:5px;
     font-size:14px;
@@ -52,15 +55,19 @@ input {
     position:relative;
     box-shadow: 0px 0px 28px rgba(0,0,0,.3);
     overflow:hidden;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("/images/jumboCard.jpg") 30 round;
 }
 
 .column{
     display: table-cell;
-    left: 15px;
+    margin-left: 20px;
 }
 
 .description{
     text-align: left;
+    margin-right: 50px;
 }
 
 .fContainer{
@@ -73,12 +80,30 @@ input {
     position:relative;
     box-shadow: 0px 0px 28px rgba(0,0,0,.3);
     overflow:hidden;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("/images/jumboCard.jpg") 30 round;
 }
 
 .header {
     top: 0px;
     background-color: black;
     padding: 20px;
+}
+
+.image1{
+    padding: 10px;
+    position: absolute;
+    height: 200px;
+    border: 10px solid transparent;
+    padding: 15px;
+}
+
+.itemImage{
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 0;
 }
 
 .jumbotron{
@@ -89,12 +114,36 @@ input {
     padding-bottom: 120px;
 }
 
+.mContainer{
+    width:220px;
+    height:100px;
+    background:transparent;
+    margin:5px auto;
+    border-radius:4px;
+    text-align:center;
+    position: relative;
+    overflow:hidden;
+}
+
+.miniLogo{
+    width:50%;
+    height: auto;
+}
+
 .mLogo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     top: 50%;
+}
+
+.pDis{
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    width: 10%;
+    height: auto;
 }
 
 .pImage{
@@ -106,9 +155,21 @@ input {
     height: auto;
 }
 
+.pMan{
+    position: absolute;
+    top: 500px;
+    left: 300px;
+    width: 10%;
+    height: auto;
+}
+
 .row {
     display: table;
-    border-spacing: 10px;
+    border-spacing: 30px;
+}
+
+.small{
+    font-size: small;
 }
 
 .sub{
