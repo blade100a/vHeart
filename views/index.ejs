@@ -1,88 +1,67 @@
-<!DOCTYPE html>
 <html>
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href= "/stylesheets/app.css">
-    
+    <head>
+        <title>vHeart - Home </title>
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="/stylesheets/app.css">
+        <link rel="stylesheet" href="/stylesheets/colours.css">
+        
+    </head>
     <body>
-        <!-- HEADER-->
-        <div class="header"></div>
+        <div id="intro" class="jumbotron">
+            <img src="/images/classmateLogo.png" class="d-inline-block align-top" alt="" loading="lazy">
 
-        <!--JumboTron-->
-        <div class="jumbotron" id="mainCard">
-            <img src="/images/classmateLogo.png" class="mLogo" alt="Classmate Logo">
-            <p class="slogan">slogan blah blah mask blah blah clean</p>
+            <div class="container">
+                <hr class="my-4">
+            </div>
+            <p> Some Text About Stuff</p>
+
+            <a class="btn purple btn-lg" href="#" role="button">Learn more</a>
         </div>
 
-        <!--Manufactur/Distributer-->
-        <img class="miniLogo pDis" src="/images/pika.png">
-        <img class="miniLogo pMan" src="/images/pika.png">
-        <div class="row">
-            <div class="mContainer column">
-                <h5>Distributer</h5>
+        <div class="container text-center mb-5">
+
+            <div class="section-sm transparent mt-5">
+                <h1 class="display-4">給你信心的體驗</h1>
+                <hr class="my-4">
+                <h4>Vheart口罩選用優質的原材料，在生產品質及環境實行嚴格管控</h4>
             </div>
-            <div class="mContainer column">
-                <h5>Manufactur</h5>
+
+            <div class="row">
+                <div class="section red col-7 pt-5 mr-5 ml-3">
+                    <h1 class="pb-2">唯康健 三層口罩</h1>
+                    <hr class="mb-4">
+                    <div class="text-left pl-5">
+                        <p>產地: 香港</p>
+                        <p>口罩數量: 50個裝</p>
+                        <p>口罩尺寸為 175mm x 95mm</p>
+                    </div> 
+                </div>
+
+                <div class="section green col-4 pt-5">
+                    <h1 class="pb-2" >口罩規格</h1>
+                    <hr class="mb-4"> 
+                    <div class="text-left pl-5">
+                        <p>符合美國ASTM標準Level 2</p>
+                        <p>細菌過濾效率(BFE) >= 98%</p>
+                        <p>微粒子過濾效率(PFE) >=98%</p>
+                        <p>柴灣自設廠房，真正香港製造，100k潔淨工場符合 ISO14644-1:2015 class 8</p>
+                        <p>品質管理系統實行 ISO13485:2016</p>
+                    </div> 
+                </div>
             </div>
+
         </div>
         
-        <!--Featured Item-->
-        <section class="background">
-            <section class="fContainer">
-                <div class="row">
-                    <section class="itemImage column">
-                        <img class="itemImage image1" src="/images/vheart.jpg">
-                    </section>
-                    <section class="itemDescription column">
-                        <h1 class="description">Item Name</h1>
-                        <h4 class="description">PRICE: $28</h4>
-                        <p class="description small">Description: Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget </p>
-                        <button type="button" class="btn btn-secondary">Pay With PayPal</button>
-                        <button type="button" class="btn btn-secondary">Pay With Google</button>
-                        <button type="button" class="btn btn-secondary">Pay With Apple</button>
-                        </section>
-                    </section>
+        <!-- footer -->
+        <footer>
+            <section class="container-fluid px-0 black">
+                <div class="text-center">
+                    <br>
+                    <p>Email: test@email.com | &copy May 2020</p>
+                    <br>
                 </div>
             </section>
-        </section>
-
-        <br/>
-        <div class="row">
-        <!--About Us-->
-            <section class="aContainer column">
-                <br/>
-                <h1 class="title">About Us</h1>
-                <p class="description small">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-            </section>
-
-            <!--Subscrition Newsletter-->
-            <section class="container column">
-                <section class="sub">
-                    <br/>
-                    <!--BELL ICON-->
-                    <svg class="bi bi-bell" width="4em" height="4em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z"/>
-                        <path fill-rule="evenodd" d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
-                    </svg>
-
-                    <h2 class="subheading">
-                        Please Subscribe for Updates
-                    </h2>
-                    <p>Sign-up with your email to get updates</p>
-                    <form>
-                        <input type='text' placeholder="Enter Your Email">
-                        <button type="button" class="btn btn-secondary">Subscribe</button>
-                    </form>
-                </section>
-            </section>
-        </div>
-        <br/>
-        <br/>
-        <br/>
-
-        <!--Footer-->
-        <footer class="blackFoot">
-            <p class="whiteText">Copyright @EDWIN,HARRI,MARCO</p>
         </footer>
 
         <!-- JS, Popper.js, and jQuery -->

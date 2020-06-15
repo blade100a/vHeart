@@ -1,212 +1,100 @@
+/* overview */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    max-width: 100%;
+    min-width: 100%;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 body {
-    background-color: white;
-    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+    background-color: rgba(26, 25, 22, 0.911);
+    color: white;
 }
 
-input {
-    width: 85%;
+a { 
+    transition: all 0.3s ease; 
+    text-decoration: none;
 }
 
-.aContainer{
-    width:900px;
-    height:300px;
-    background:#fff;
-    margin:20px auto;
-    border-radius:4px;
-    text-align:center;
-    position:relative;
-    box-shadow: 0px 0px 28px rgba(0,0,0,.3);
-    overflow:hidden;
-    border: 10px solid transparent;
-    padding: 15px;
-    border-image: url("/images/jumboCard.jpg") 30 round;
+div {
+    box-sizing: border-box;
 }
 
-.background{
-    background-image: url("/images/jumboCard.jpg");
-    padding: 10px;
-    border-radius: 50%;
-}
-
-.blackFoot{
-    bottom:0px;
-    background-color: black;
-    padding-top:16px;
-    padding-bottom:16px;
-}
-
-.btn{
-    width:90%;
-    background:lightskyblue;
-    padding:8px;
-    border:none;
-    border-radius:5px;
-    font-size:14px;
-    color:#fff;
-    text-transform:capitalize;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.btn:hover{
-    cursor:pointer;
-}
-
-.container{
-    width:440px;
-    height:300px;
-    background:#fff;
-    margin:20px auto;
-    border-radius:4px;
-    text-align:center;
-    position:relative;
-    box-shadow: 0px 0px 28px rgba(0,0,0,.3);
-    overflow:hidden;
-    border: 10px solid transparent;
-    padding: 15px;
-    border-image: url("/images/jumboCard.jpg") 30 round;
-}
-
-.column{
-    display: table-cell;
-    margin-left: 20px;
-}
-
-.description{
-    text-align: left;
-    margin-right: 50px;
-}
-
-.fContainer{
-    width:880px;
-    height:500px;
-    background:#fff;
-    margin:20px auto;
-    border-radius:4px;
-    text-align:center;
-    position:relative;
-    box-shadow: 0px 0px 28px rgba(0,0,0,.3);
-    overflow:hidden;
-    border: 10px solid lightseagreen;
-    padding: 10px;
-}
-
-.header {
-    top: 0px;
-    background-color: black;
-    padding: 20px;
-}
-
-.image1{
-    padding: 10px;
-    position: absolute;
-    height: 200px;
-    border: 10px solid transparent;
-    padding: 15px;
-}
-
-.itemImage{
-    width: 60%;
-    height: 60%;
-    top: 20%;
-    left: 0;
+hr{
+    background-color: aliceblue;
 }
 
 .jumbotron{
     text-align: center;
+    border-radius: 0;
+    height: (20vh - 5vw);
     width: auto;
     background-color: transparent;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 28vh;
+    padding-bottom: 28vh;
+    color: black;
 }
 
-.mContainer{
-    width:180px;
-    height:100px;
-    background:transparent;
-    margin:5px auto;
-    text-align:center;
-    position: relative;
-    overflow:hidden;
+.jumbotron img{
+    width:auto; 
+    height:10vw; 
 }
 
-.miniLogo{
-    width:50%;
-    height: auto;
+.jumbotron h1{
+    font-weight: 700;
 }
 
-.mLogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    top: 50%;
+.jumbotron p{
+    font-size: large;
+    font-weight: 500;
 }
 
-.pDis{
-    position: absolute;
-    top: 490px;
-    left: 50px;
-    width: 10%;
-    height: auto;
+.navbar{
+    background-color: rgba(39, 38, 30, 0.911);
 }
 
-.pImage{
-    padding: 10px;
-    margin-left: 5px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
+.navbar a{
+    color: rgb(238, 231, 231);
 }
 
-.pMan{
-    position: absolute;
-    top: 490px;
-    left: 250px;
-    width: 10%;
-    height: auto;
+.section-sm{
+    height: 20vh;
+    width: auto;
+    border-radius: 1.5%;
 }
 
-.row {
-    display: table;
-    border-spacing: 30px;
+.section{
+    height: 60vh;
+    width: auto;
+    border-radius: 2%;
 }
 
-.small{
-    font-size: small;
+.section h1{
+    font-weight: 700;
 }
 
-.sub{
-    top:0;
-    background:#fff;
-    margin-top:20px;
-    display:block;
-    height:500px;
-    width:400px;
-    margin:0px auto;
-    position:absolute;
+.section p{
+    font-weight: 500;
+    font-size: larger;
 }
 
-.sub  .subheading{
-    color:black;
-    text-transform:capitalize;
-    font-size:20px;
-    margin-top:40px;
+.product-img{
+    height: 45vh;
+    width: auto;
+    border-radius: 1.5%;
 }
 
-.title{
-    text-align: left;
-}
-
-.slogan {
-    font: 15px Verdana, sans-serif;
-    padding-top: 40px;
-}
-
-.whiteText{
-    color: white;
-}
-
-#mainCard {
-    background-image: url("/images/jumboCard.jpg");
+#intro{
+    background-image: url("/images/pencils.jpg");
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
 }
