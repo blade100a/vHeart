@@ -13,9 +13,9 @@ html {
 body {
     max-width: 100%;
     min-width: 100%;
-    font-family: 'Abel', sans-serif;
-    font-size: 14px;
-    background-color: rgba(26, 25, 22, 0.911);
+    font-family: 'Abel', Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+    font-size: 12px;
+    background-color: rgba(75, 87, 201, 0.911);
     color: white;
 }
 
@@ -28,37 +28,17 @@ div {
     box-sizing: border-box;
 }
 
+.logo{
+    width: 15%;
+    height: auto;
+}
+
 .lower{
     background-color: aliceblue;
 }
 
-.jumbotron{
-    text-align: center;
-    border-radius: 0;
-    height: (20vh - 5vw);
-    width: auto;
-    background-color: transparent;
-    padding-top: 28vh;
-    padding-bottom: 28vh;
-    color: black;
-}
-
-.jumbotron img{
-    width:auto; 
-    height:10vw; 
-}
-
-.jumbotron h1{
-    font-weight: 700;
-}
-
-.jumbotron p{
-    font-size: large;
-    font-weight: 500;
-}
-
 .navbar{
-    background-color: rgba(39, 38, 30, 0.911);
+    background-color: transparent;
 }
 
 .navbar a{
@@ -75,15 +55,40 @@ div {
     height: 60vh;
     width: auto;
     border-radius: 2%;
+    position: relative;
 }
 
-.section h1{
+.section .slogan{
     font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}   
+
+.slogan .buy-btn{
+    width: 70%;
+    height: auto;
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.slogan h1{
+    font-size:3vw; ;
 }
 
 .section p{
     font-weight: 500;
-    font-size: larger;
+    font-size: 2vh;
 }
 
 .product-img{
@@ -92,10 +97,25 @@ div {
     border-radius: 1.5%;
 }
 
-#intro{
-    background-image: url("/images/pencils.jpg");
+.qr{
+    width: 100%;
+    height: auto;
+}
+
+#welcome{
+    height: 100%;
+    width: auto;
+    background-image: url("/images/jumboCard.jpg");
     background-size: cover;
     background-repeat:   no-repeat;
     background-position: center center; 
+}
+
+.fa-chevron-circle-down{
+    color: #000;
+}
+
+.arrow, .arrow:visited, .arrow:hover, .arrow:active {
+  color: inherit;
 }
 
