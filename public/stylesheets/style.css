@@ -1,0 +1,106 @@
+html, body{
+  height: 100%;
+}
+
+body{
+    font-family: 'Abel', Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+}
+
+h1{
+    color:#002a3a;
+}
+
+.pageHome, .pageAbout{
+    height:100vh;
+    width:100%;
+}
+
+.pageCheckout{
+    height:90vh;
+    width:100%;
+}
+
+/*
+
+Home Section CSS
+
+*/
+
+.pageHome{
+    background-color: #e0e4f3;
+}
+
+.pageAbout{
+    background-color: #d4d6dd;
+}
+
+.pageCheckout{
+    background-color: #e0e4f3;
+}
+
+.menu{
+    background-color: #011321;
+}
+
+.menuCM{
+    width:250px;
+    height:80px;
+}
+
+.menuVH{
+    width:150px;
+    height:80px;
+}
+
+.homeContent{
+    height:65vh;
+}
+
+@media (max-width: 992px) {
+    .homeContent{
+        height:75vh;
+    }
+}
+
+
+
+.sloganHR{
+    opacity:0.25;
+}
+
+.arrow, .arrow:visited, .arrow:hover, .arrow:active {
+  color: #011321;
+}
+
+/*button*/
+
+
+/*
+
+About Section CSS
+
+*/
+.aboutContainer{
+    color: #002A3A
+}
+
+@media (max-width: 992px) {
+    
+}
+
+
+.iconWhatsapp, .iconEmail{
+    font-size:24px;
+}
+
+.foot{
+    height: 10vh;
+}
+
+.footContainer p{
+    display: inline;
+}
+
+
+
+
