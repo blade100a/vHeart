@@ -1,24 +1,24 @@
-html, body{
-  height: 100%;
+html{
+    overflow: scroll;
+    overflow-x: hidden;
+    max-width: 100%;
+    min-width: 100%;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    /*background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 body{
     font-family: 'Abel', Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+    max-width: 100%;
+    min-width: 100%;
+    color: black;
 }
 
-h1{
-    color:#002a3a;
-}
 
-.pageHome, .pageAbout{
-    height:100vh;
-    width:100%;
-}
 
-.pageCheckout{
-    height:90vh;
-    width:100%;
-}
+
 
 /*
 
@@ -28,17 +28,15 @@ Home Section CSS
 
 .pageHome{
     background-color: #e0e4f3;
+    height:100vh;
+    width:100%;
 }
 
-.pageAbout{
-    background-color: #d4d6dd;
+.pageHome .row{
+    text-align: center;
 }
 
-.pageCheckout{
-    background-color: #e0e4f3;
-}
-
-.menu{
+nav{
     background-color: #011321;
 }
 
@@ -54,25 +52,35 @@ Home Section CSS
 
 .homeContent{
     height:65vh;
+    display: flex;
+    justify-content: space-around;
 }
 
-@media (max-width: 992px) {
-    .homeContent{
-        height:75vh;
-    }
+.slogan h1{
+    color:#002a3a;
 }
 
-
-
-.sloganHR{
+.slogan hr{
     opacity:0.25;
+}
+
+.slogan a{
+    font-weight: bold;
+}
+
+.slogan, .product{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
 }
 
 .arrow, .arrow:visited, .arrow:hover, .arrow:active {
   color: #011321;
 }
 
-/*button*/
+
+
+
 
 
 /*
@@ -80,25 +88,91 @@ Home Section CSS
 About Section CSS
 
 */
-.aboutContainer{
+.pageAbout{
+    background-color: #d4d6dd;
+    height:100vh;
+    width:100%;
     color: #002A3A
 }
 
-@media (max-width: 992px) {
+.pageAbout .row{
+    height: 50vh;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/*
+
+Checkout Section CSS
+
+*/
+
+.pageCheckout{
+    background-color: #e0e4f3;
+    height:90vh;
+    width:100%;
+}
+
+
+
+
+
+/*
+
+Footer CSS
+
+*/
+footer .row{
+    height: 10vh;
+    justify-content: space-between;
+}
+
+footer .col-5{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contact{
+    text-align: right;
+}
+
+.contact p{
+    display: inline;
+}
+
+.contact i{
+    font-size:24px;
     
 }
 
 
-.iconWhatsapp, .iconEmail{
-    font-size:24px;
+/*
+
+Mobile
+
+*/
+
+@media (max-width: 576px){
+    
 }
 
-.foot{
-    height: 10vh;
+@media (max-width: 768px){
+    
 }
 
-.footContainer p{
-    display: inline;
+@media (max-width: 992px){ 
+    .homeContent{
+        height:75vh;
+    }
+}
+
+@media (max-width: 1200px){
+    
 }
 
 
