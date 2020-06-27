@@ -1,0 +1,180 @@
+html{
+    overflow: scroll;
+    overflow-x: hidden;
+    max-width: 100%;
+    min-width: 100%;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    /*background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+body{
+    font-family: 'Abel', Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+    max-width: 100%;
+    min-width: 100%;
+    color: black;
+}
+
+
+
+
+
+/*
+
+Home Section CSS
+
+*/
+
+.pageHome{
+    background-color: #e0e4f3;
+    height:100vh;
+    width:100%;
+}
+
+.pageHome .row{
+    text-align: center;
+}
+
+nav{
+    background-color: #011321;
+}
+
+.menuCM{
+    width:250px;
+    height:80px;
+}
+
+.menuVH{
+    width:150px;
+    height:80px;
+}
+
+.homeContent{
+    height:65vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slogan h1{
+    color:#002a3a;
+}
+
+.slogan hr{
+    opacity:0.25;
+}
+
+.slogan a{
+    font-weight: bold;
+}
+
+.slogan, .product{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.arrow, .arrow:visited, .arrow:hover, .arrow:active {
+  color: #011321;
+}
+
+
+
+
+
+
+/*
+
+About Section CSS
+
+*/
+.pageAbout{
+    background-color: #d4d6dd;
+    height:100vh;
+    width:100%;
+    color: #002A3A
+}
+
+.pageAbout .row{
+    height: 50vh;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/*
+
+Checkout Section CSS
+
+*/
+
+.pageCheckout{
+    background-color: #e0e4f3;
+    height:90vh;
+    width:100%;
+}
+
+
+
+
+
+/*
+
+Footer CSS
+
+*/
+footer .row{
+    height: 10vh;
+    justify-content: space-between;
+}
+
+footer .col-5{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contact{
+    text-align: right;
+}
+
+.contact p{
+    display: inline;
+}
+
+.contact i{
+    font-size:24px;
+    
+}
+
+
+/*
+
+Mobile
+
+*/
+
+@media (max-width: 576px){
+    
+}
+
+@media (max-width: 768px){
+    
+}
+
+@media (max-width: 992px){ 
+    .homeContent{
+        height:75vh;
+    }
+}
+
+@media (max-width: 1200px){
+    
+}
+
+
+
+

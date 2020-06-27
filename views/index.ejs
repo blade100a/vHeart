@@ -1,99 +1,147 @@
 <html>
     <head>
-        <title>vHeart - Home </title>
+        <title>Vheart</title>
         <!-- CSS only -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <link rel="stylesheet" href="/stylesheets/app.css">
-        <link rel="stylesheet" href="/stylesheets/home.css">
-        <link rel="stylesheet" href="/stylesheets/colours.css">
-        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="/stylesheets/style.css">
     </head>
     <body>
-        <div class="home bg-dark text-white">
-            <div class="menu">
-                <div class="width mx-auto">
-                    <img class="menuLogo1" src="images/classmateLogo.png">
-                    <img class="menuLogo2" src="images/vheartLogo.png">
-                </div>
-                <hr class="menuBreak mx-auto">
-                <div class="width mx-auto">
-                    <div class="slogan">
-                        <h1>給你信心的體驗</h1>
-                        <h1>全部現貨 無需等候</h1>
+    
+        <!-- Home Section -->
+        <div class="pageHome" id="home">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <img class="menuCM" src="images/classmateLogo.png" alt="">
+                </a>
+                
+                <a class="navbar-brand" href="#">
+                    <img class="menuVH" src="images/vheartLogo.png" alt="">
+                </a>
+            </nav>
+            
+            <div class="container-fluid">
+            
+                <!-- Slogan + Buy button + product image -->
+                <div class="homeContent row">
+                    <div class="slogan col-sm-8 col-lg-5">
+                        <h1>
+                            給你信心的體驗<br> 
+                            <hr>
+                            全部現貨 無需等候   
+                        </h1>
+ 
+                        <a href="#checkout" class="btnBuy btn btn-warning btn-lg mt-5" role="button">立即購買</a>
                     </div>
-                    <div class="product">
-                        <img class="productImg mx-auto h-100" src="images/product.png">
+                    
+                    <div class="product col-sm-8 col-lg-5">
+                        <img class="img-fluid" src="images/product.png" alt="Product Image">
                     </div>
-                    <a href="#" class="btn btn-outline-primary btn-lg" role="button">Buy</a>
-                    <h2><a href="#" class="fas fa-chevron-circle-down"></a></h2>
                 </div>
+                
+                <!-- intro -->
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="mt-0">Vheart 唯康健口罩選用優質的原材料，在生產品質及環境實行嚴格管控</h5>
+                    </div>
+                </div>
+                
+                <!-- Down arrow -->
+                <div class="row">
+                    <div class="col-12">
+                        <h2><a href="#about" class="arrow fas fa-chevron-circle-down mt-1"></a></h2>
+                    </div>
+                </div>
+                
             </div>
+            
         </div>
         
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-6 transparent section text-center mt-3">
-                        <h1>給你信心的體驗</h1>
-                        <h1>全部現貨 無需等候</h1>
-                        <a href="#" class="btn btn-outline-primary btn-lg mt-5" role="button">Buy</a>
-                </div>
-
-                <div class="col-6 transparent section">
-                    <img class="product-img" src="images/product.png">
-                </div>
-            </div>
+        
+        
+        
+        
+        <!-- About Section -->
+        <div class="pageAbout container-fluid" id="about">
+            <!-- Top Row -->
             <div class="row">
-                <div class="col-12 text-center">
-                    <h2><a href="#" class="fas fa-chevron-circle-down"></a></h2>
+            
+                <!-- Left column -->
+                <div class="col-sm-11 col-lg-4">
+                    <img class="img-fluid" src="images/layers.png" alt="Layers Image">
                 </div>
+                
+                <!-- Right column -->
+                <div class="col-sm-11 col-lg-4">
+                    <h4>第一層</h4>
+                    <p>防潑水不織材質防止飛沫</p>
+
+                    <h4>第二層</h4>
+                    <p>過濾層有效阻隔≥99%細菌及顆粒</p>
+                    
+                    <h4>第三層</h4>
+                    <p>柔軟不織布內層吸附呼吸時產生的水氣</p>
+                </div>
+                
             </div>
-        </div>
-
-        <div class="container text-center mb-5">
-            <div class="section-sm transparent mt-5">
-                <h1 class="display-4">給你信心的體驗</h1>
-
-                <hr class="my-4">
-                <h4>vHeart口罩選用優質的原材料，在生產品質及環境實行嚴格管控</h4>
-            </div>
-
+            
+            
+            <!-- Bottom Row -->
             <div class="row">
-                <div class="section red col-7 pt-5 mr-5 ml-3">
-                    <h1 class="pb-2">唯康健 三層口罩</h1>
-                    <img class="menuLogo1" src="images/classmateLogo.png">
-                    <hr class="mb-4">
-                    <div class="text-left pl-5">
-                        <p>產地: 香港</p>
-                        <p>口罩數量: 50個裝</p>
-                        <p>口罩尺寸為 175mm x 95mm</p>
-                    </div> 
+            
+                <!-- Left column -->
+                <div class="col-sm-11 col-lg-4">
+                    <h4>香港製造</h4>
+                    <p>產地: 香港<br>
+                    柴灣自設廠房，真正香港製造 </p>
+                    <br>
+                    
+                    <h4>符合美國ASTM標準Level 2</h4>
+                    <p>細菌過濾效率(BFE)>=98<br>
+                    微粒子過濾效率(PFE)>=98%<br>
+                    100k潔淨工場符合 ISO14644-1:2015 class 8<br>
+                    品質管理系統實行 ISO13485:2016</p>
+                    <br>
+                    
+                    <h4>每盒$130</h4>
+                    <p>口罩數量: 50個裝<br>
+                    口罩尺寸為: 175mm x 95mm</p>
                 </div>
-
-                <div class="section green col-4 pt-5">
-                    <h1 class="pb-2" >口罩規格</h1>
-                    <hr class="lower mb-4"> 
-                    <div class="text-left pl-5">
-                        <p>符合美國ASTM標準Level 2</p>
-                        <p>細菌過濾效率(BFE) >= 98%</p>
-                        <p>微粒子過濾效率(PFE) >=98%</p>
-                        <p>柴灣自設廠房，真正香港製造，100k潔淨工場符合 ISO14644-1:2015 class 8</p>
-                        <p>品質管理系統實行 ISO13485:2016</p>
-                    </div> 
+                
+                <!-- Right column -->
+                <div class="col-sm-11 col-lg-4">
+                    <img class="img-fluid" src="images/layers.png" alt="Layers Image">
                 </div>
+                
             </div>
-
+            
         </div>
         
-        <!-- footer -->
-        <footer>
-            <section class="container-fluid px-0 black">
-                <div class="text-center">
-                    <br>
-                    <p>Email: test@email.com | &copy May 2020</p>
-                    <br>
+        
+        
+        
+        
+        
+        <!-- Checkout Section -->
+        <div class="pageCheckout" id="checkout">
+            
+        </div>
+        
+        
+        
+        
+        <!-- Footer -->
+        <footer class="container">
+            <div class="row">
+                <div class="col-5">
+                    <img class="menuCM img-fluid" src="images/classmateLogo.png" alt="Classmate Logo">
                 </div>
-            </section>
+                <div class="col-5 contact">
+                    <p>63750760</p><i class="fab fa-whatsapp ml-2"></i> <br>
+                    <p>info@classmate.hk</p><i class="fa fa-envelope ml-2"></i>
+                </div>
+            </div>
         </footer>
 
         <!-- JS, Popper.js, and jQuery -->
