@@ -161,6 +161,22 @@
                     <button type="submit" class="btn btn-primary">Go to payment</button>
                   </form>
             </div>
+
+            <div class="container">
+                <select id="payment-method">
+                    <option value="option1">option1</option>
+                    <option value="option2">option2</option>
+                    <option value="option3">option3</option>
+                    <option value="option4">option4</option>
+                </select>
+    
+                <div id="option1" class="group">asdf</div>
+                <div id="option2" class="group">kljh</div>
+                <div id="option3" class="group">zxcv</div>
+                <div id="option4" class="group">qwerty</div>
+            </div>
+
+
         </div>
         
         
@@ -182,5 +198,15 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script> 
+            $(document).ready(function () {
+                $('.group').hide();
+                $('#option1').show();
+                $('#payment-method').change(function () {
+                  $('.group').hide();
+                  $('#'+$(this).val()).show();
+                })
+              });
+        </script>
     </body>
 </html>
