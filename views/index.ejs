@@ -158,8 +158,8 @@
                       <label for="inputAddress2">Address</label>
                       <input type="text" class="form-control" id="inputAddress" placeholder="Apartment, studio, or floor">
                     </div>
-                    <button type="submit" class="btn btn-primary">Go to payment</button>
                   </form>
+                  
                 <div class="container">
                     <select id="payment-method">
                         <option value="option1">順豐</option>
@@ -177,10 +177,6 @@
                 </div>
             </div>
 
-            
-
-
-        </div>
         
         
         
@@ -211,6 +207,12 @@
                   $('#'+$(this).val()).show();
                 })
               });
+        </script>
+        <script>
+            function showPayment(){
+                var paymentSection = document.getElementById('payment-section');
+                paymentSection.style.display = 'block';
+            }
         </script>
     </body>
 </html>
