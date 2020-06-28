@@ -118,7 +118,9 @@ Checkout Section CSS
     width:100%;
 }
 
-
+#payment-section{
+    display: none;
+}
 
 
 

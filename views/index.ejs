@@ -158,11 +158,11 @@
                       <label for="inputAddress2">Address</label>
                       <input type="text" class="form-control" id="inputAddress" placeholder="Apartment, studio, or floor">
                     </div>
-                    <button type="submit" class="btn btn-primary">Go to payment</button>
                   </form>
+                  <button onClick="showPayment()"  class="btn btn-primary">Go to payment</button>
             </div>
 
-            <div class="container">
+            <div class="container pt-3" id="payment-section"> 
                 <select id="payment-method">
                     <option value="option1">option1</option>
                     <option value="option2">option2</option>
@@ -175,8 +175,6 @@
                 <div id="option3" class="group">zxcv</div>
                 <div id="option4" class="group">qwerty</div>
             </div>
-
-
         </div>
         
         
@@ -207,6 +205,12 @@
                   $('#'+$(this).val()).show();
                 })
               });
+        </script>
+        <script>
+            function showPayment(){
+                var paymentSection = document.getElementById('payment-section');
+                paymentSection.style.display = 'block';
+            }
         </script>
     </body>
 </html>
