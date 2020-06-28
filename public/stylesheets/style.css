@@ -121,9 +121,10 @@ Checkout Section CSS
 .pageCheckout img{
     width: 100%;
     height: auto;
+}
 
-
-
+#payment-section{
+    display: none;
 }
 
 /*
