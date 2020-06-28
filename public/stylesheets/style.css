@@ -118,7 +118,11 @@ Checkout Section CSS
     width:100%;
 }
 
+.pageCheckout img{
+    width: 100%;
+    height: auto;
 
+}
 
 
 
