@@ -160,45 +160,24 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Go to payment</button>
                   </form>
-                  
-                  <div class="container">
-                    <div class="row">
-                        1. 順豐 運費到付 (買家自付)
-                    </div>
-                    <div class="row">
-                        2. 轉數快63750760
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-md-4">
-                            3. Payme
-                            <img id="payme" src="images/qr_payme.jpg">
-                        </div>
-                        <div class="col-md-4">
-                            4. 微信
-                            <img id="we" src="images/qr_weishin.jpeg">
-                        </div>
-                        <div class="col-md-4">
-                            5. 支付寶
-                            <img id="ba" src="images/qr_chifu.jpeg">
-                        </div>
-                    </div>
+                <div class="container">
+                    <select id="payment-method">
+                        <option value="option1">順豐</option>
+                        <option value="option2">轉數快</option>
+                        <option value="option3">Payme</option>
+                        <option value="option4">微信</option>
+                        <option value="option5">支付寶</option>
+                    </select>
+        
+                    <div id="option1" class="group">運費到付 (買家自付)</div>
+                    <div id="option2" class="group">63750760</div>
+                    <div id="option3" class="group"><img id="payme" src="images/qr_payme.jpg"></div>
+                    <div id="option4" class="group"><img id="we" src="images/qr_weishin.jpeg"></div>
+                    <div id="option5" class="group"><img id="ba" src="images/qr_chifu.jpeg"></div>
                 </div>
             </div>
 
-            <div class="container">
-                <select id="payment-method">
-                    <option value="option1">option1</option>
-                    <option value="option2">option2</option>
-                    <option value="option3">option3</option>
-                    <option value="option4">option4</option>
-                </select>
-    
-                <div id="option1" class="group">asdf</div>
-                <div id="option2" class="group">kljh</div>
-                <div id="option3" class="group">zxcv</div>
-                <div id="option4" class="group">qwerty</div>
-            </div>
+            
 
 
         </div>
