@@ -100,6 +100,11 @@ About Section CSS
     justify-content: center;
 }
 
+.pageAbout  .img{
+    max-width: 80%;
+}
+
+
 
 
 
@@ -114,16 +119,31 @@ Checkout Section CSS
 
 .pageCheckout{
     background-color: #e0e4f3;
-    height:90vh;
+    height:100vh;
     width:100%;
 }
 
+.checkoutInfo{
+    
+}
+
+.checkoutInfo .row{
+    height: 100vh;
+}
+
+.checkoutInfo .col{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .pageCheckout img{
-    width: 100%;
+    width: 250px;
     height: auto;
+}
 
-
-
+#payment, #form{
+    display: none;
+}
 
 
 /*

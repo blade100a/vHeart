@@ -111,7 +111,7 @@
                 
                 <!-- Right column -->
                 <div class="col-sm-11 col-lg-4">
-                    <img class="img-fluid" src="images/layers.png" alt="Layers Image">
+                    <img class="img-fluid" src="images/mask.png" alt="Layers Image">
                 </div>
                 
             </div>
@@ -125,58 +125,77 @@
         
         <!-- Checkout Section -->
         <div class="pageCheckout" id="checkout">
-            <div class="container text-center">
-                <h1>Checkout</h1>
-                <p>如訂購8盒以上，免順豐智能櫃運費</p>
-                <p>未滿需收取$50運費</p>
-                <p>先付款，後留貨</p>
-                <a type="button" class="btn btn-success btn-lg " href="https://wa.me/85263750760/?text=我要訂口罩"><i class="fab fa-whatsapp ml-2"></i> Whatsapp 訂購</a>
-            </div>
+            <div class="checkoutInfo container text-center">
+                <div class="row">
+                    <div class="col">
+                        <h1>立即購買</h1><hr>
+                        
+                        <h5>此優惠只適用於學校、老師、家長教師會及團體訂購</h5><br>
+                        <p>如訂購8盒以上，免順豐智能櫃運費</p>
+                        <p>未滿需收取$50運費</p>
+                        <p>先付款，後留貨</p>
+                        <a type="button" class="btn btn-success btn-lg" href="https://wa.me/85263750760/?text=我要訂口罩"><i class="fab fa-whatsapp ml-1"></i> Whatsapp 訂購</a>
+                        <h3>或</h3>
+                        <a type="button" onClick="showForm()" class="btn btn-secondary btn-lg" ><i class="fab fa-wpforms ml-1"></i> 網上訂購</a>
+                    </div>
+                    <div class="col">
+                        <div class="container text-left" id="form">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="name">名稱</label>
+                                        <input type="text" class="form-control" id="inputName">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="phone">電話號碼</label>
+                                        <input type="text" class="form-control" id="inputPhone">
+                                   </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                  <label for="email">電郵</label>
+                                  <input type="email" class="form-control" id="inputEmail" placeholder="johndoe@email.com">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="quantity">數量(盒)</label>
+                                    <input type="number" min="0" max="1000" class="form-control" id="inputQuantity" placeholder="0">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="address">送貨地址</label>
+                                    <input type="text" class="form-control" id="inputAddress">
+                                </div>
+                                <p id="total">$0</p> 
+                                
+                            </form>
+                            <button onClick="showPayment()" href="#" class="btn btn-primary">付款</button>
+                              
+                            <div class="container" id="payment">
+                                <select id="method">
+                                    <option value="option1">順豐</option>
+                                    <option value="option2">轉數快</option>
+                                    <option value="option3">Payme</option>
+                                    <option value="option4">微信</option>
+                                    <option value="option5">支付寶</option>
+                                </select>
+                    
+                                <div id="option1" class="group">運費到付 (買家自付)</div>
+                                <div id="option2" class="group">63750760</div>
+                                <div id="option3" class="group"><img class="img-fluid" src="images/qr_payme.jpg"></div>
+                                <div id="option4" class="group"><img class="img-fluid" src="images/qr_weishin.jpeg"></div>
+                                <div id="option5" class="group"><img class="img-fluid" src="images/qr_chifu.jpeg"></div>
+                            </div>
 
-            <div class="container">
-                <h4> 1. Please fill out the following form:</h4>
-                <form>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputEmail4">Name</label>
-                        <input type="text" class="form-control" id="inputEmail4">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputPassword4">Phone Number</label>
-                        <input type="text" class="form-control" id="inputPassword4">
-                      </div>
+                        </div>
+                    
                     </div>
-                    <div class="form-group">
-                      <label for="inputAddress">Email</label>
-                      <input type="email" class="form-control" id="inputEmail" placeholder="someone@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="inputAddress">Quantity</label>
-                        <input type="number" class="form-control" id="inputQuantity" placeholder="How many?">
-                      </div>
-                    <div class="form-group">
-                      <label for="inputAddress2">Address</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="Apartment, studio, or floor">
-                    </div>
-                  </form>
-                  
-                <div class="container">
-                    <select id="payment-method">
-                        <option value="option1">順豐</option>
-                        <option value="option2">轉數快</option>
-                        <option value="option3">Payme</option>
-                        <option value="option4">微信</option>
-                        <option value="option5">支付寶</option>
-                    </select>
-        
-                    <div id="option1" class="group">運費到付 (買家自付)</div>
-                    <div id="option2" class="group">63750760</div>
-                    <div id="option3" class="group"><img id="payme" src="images/qr_payme.jpg"></div>
-                    <div id="option4" class="group"><img id="we" src="images/qr_weishin.jpeg"></div>
-                    <div id="option5" class="group"><img id="ba" src="images/qr_chifu.jpeg"></div>
                 </div>
             </div>
 
+            
+
+        </div>
         
         
         
@@ -202,16 +221,32 @@
             $(document).ready(function () {
                 $('.group').hide();
                 $('#option1').show();
-                $('#payment-method').change(function () {
+                $('#methods').change(function () {
                   $('.group').hide();
                   $('#'+$(this).val()).show();
                 })
               });
         </script>
         <script>
-            function showPayment(){
-                var paymentSection = document.getElementById('payment-section');
-                paymentSection.style.display = 'block';
+            function showPayment() {
+                var x = document.getElementById("payment");
+                x.style.display = "block";
+            }
+        </script>
+        <script>
+            function showForm() {
+                var x = document.getElementById("form");
+                x.style.display = "block";
+            }
+        </script>
+        <script>
+            const input = document.querySelector('#inputQuantity');
+            const log = document.getElementById('total');
+
+            input.addEventListener('input', updateValue);
+
+            function updateValue(e) {
+                log.textContent = "$" + e.target.value*130;
             }
         </script>
     </body>
