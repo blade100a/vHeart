@@ -100,8 +100,18 @@ About Section CSS
     justify-content: center;
 }
 
-.pageAbout  .img{
-    max-width: 80%;
+.pageAbout img{
+    width: 400px;
+    height: auto;
+}
+
+.pageAbout .col-sm-11{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.aboutText{
+    
 }
 
 
@@ -141,8 +151,12 @@ Checkout Section CSS
     height: auto;
 }
 
-#payment, #form{
+#payment/*, #form*/{
     display: none;
+    
+}
+
+.cost{
 }
 
 
