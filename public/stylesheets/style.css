@@ -195,7 +195,16 @@ Mobile
 
 */
 
-@media (max-width: 576px){
+@media screen and (max-width: 550px){
+    .menuCM{
+        height: 40px;
+        width: auto;
+    }
+
+    .menuVH{
+        height: 40px;
+        width: auto;
+    }
     
 }
 
