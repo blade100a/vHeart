@@ -129,7 +129,7 @@ Checkout Section CSS
 
 .pageCheckout{
     background-color: #e0e4f3;
-    height:60vh;
+    height:100vh;
     width:100%;
 }
 
@@ -137,11 +137,11 @@ Checkout Section CSS
     
 }
 
-/* .checkoutInfo .row{
+.checkoutInfo .row{
     height: 100vh;
-} */
+}
 
-.checkoutInfo .col{
+.checkoutInfo .col-lg-6{
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -153,9 +153,6 @@ Checkout Section CSS
 
 #payment, #form{
     display: none;  
-}
-
-.cost{
 }
 
 
@@ -175,6 +172,11 @@ footer .col-5{
 }
 
 .contact{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contact{
     text-align: right;
 }
 
@@ -186,6 +188,8 @@ footer .col-5{
     font-size:24px;
     
 }
+    
+
 
 
 /*
@@ -216,7 +220,7 @@ Mobile
     }
     
     .pageAbout .row{
-        height: 70vh;
+        height: 60vh;
         justify-content: center;
     }
     
@@ -241,10 +245,6 @@ Mobile
     .checkoutInfo{
         height: 100vh;
     }
-    
-    /* .checkoutInfo .row{
-        
-    } */
     
     .checkoutInfo .col{
         margin-top: auto;
@@ -275,20 +275,181 @@ Mobile
         margin-bottom: auto;
     }
     
-}
-
-@media (max-width: 768px){
+    #mask2{
+        margin-bottom:50px;
+    }
     
 }
 
+@media (max-width: 768px){
+    /* about */
+    .pageAbout{
+        background-color: #d4d6dd;
+        height:150vh;
+        width:100%;
+        color: #002A3A;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    
+    .pageAbout .row{
+        height: 60vh;
+        justify-content: center;
+    }
+    
+    .pageAbout img{
+        width: 300px;
+        height: auto;
+    }
+    
+    .pageAbout .col-sm-11{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .pageCheckout{
+        background-color: #e0e4f3;
+        height:100vh;
+        width:100%;
+    }
+    
+
+    /* checkout */
+    .checkoutInfo{
+        height: 100vh;
+    }
+    
+    .checkoutInfo .col{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .pageCheckout{
+        padding-top: 10%;
+        height: 135vh;
+    }
+
+    .pageCheckout img{
+        width: 250px;
+        height: auto;
+    }
+    
+    #payment, #form{
+        display: none;  
+    }
+
+    footer .row{
+        height: 10vh;
+        justify-content: space-between;
+    }
+    
+    footer .col-5{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    #mask2{
+        margin-bottom:50px;
+    }
+    
+    #form{
+        margin-top:50px;
+    }
+}
+
 @media (max-width: 992px){ 
-    .homeContent{
-        height:75vh;
+    
+
+    /* about */
+    .pageAbout{
+        background-color: #d4d6dd;
+        height:150vh;
+        width:100%;
+        color: #002A3A;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    
+    .pageAbout .row{
+        height: 60vh;
+        justify-content: center;
+    }
+    
+    .pageAbout img{
+        width: 300px;
+        height: auto;
+    }
+    
+    .pageAbout .col-sm-11{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .pageCheckout{
+        background-color: #e0e4f3;
+        height:100vh;
+        width:100%;
+    }
+    
+
+    /* checkout */
+    .checkoutInfo{
+        height: 100vh;
+    }
+    
+    .checkoutInfo .col{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .pageCheckout{
+        padding-top: 10%;
+        height: 135vh;
+    }
+
+    .pageCheckout img{
+        width: 250px;
+        height: auto;
+    }
+    
+    #payment, #form{
+        display: none;  
+    }
+
+    footer .row{
+        height: 10vh;
+        justify-content: space-between;
+    }
+    
+    footer .col-5{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    #mask2{
+        margin-bottom:50px;
+    }
+    
+    #form{
+        margin-top:50px;
+    }
+    
+    .productImg{
+        width: 450px;
+        height: auto;
     }
 }
 
 @media (max-width: 1200px){
+    .checkoutInfo .col-lg-6{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
     
+    footer .col-5{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 }
 
 

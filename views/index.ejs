@@ -39,7 +39,7 @@
                     </div>
                     
                     <div class="product col-sm-8 col-lg-5">
-                        <img class="img-fluid" src="images/product.png" alt="Product Image">
+                        <img class="productImg img-fluid" src="images/product.png" alt="Product Image">
                     </div>
                 </div>
                 
@@ -68,12 +68,12 @@
             <div class="row">
             
                 <!-- Left column -->
-                <div id="mask1" class="col-sm-11 col-lg-4 order-2">
+                <div id="mask1" class="col-sm-11 col-lg-4">
                     <img class="img-fluid" src="images/layers.png" alt="Layers Image">
                 </div>
                 
                 <!-- Right column -->
-                <div id="mask-txt1" class="col-sm-11 col-lg-4 order-1">
+                <div id="mask-txt1" class="col-sm-11 col-lg-4">
                     <h4>第一層</h4>
                     <p>防潑水不織材質防止飛沫</p>
 
@@ -88,10 +88,13 @@
             
             
             <!-- Bottom Row -->
+                
             <div class="row">
-            
+                <div id="mask2" class="col-sm-11 col-lg-4 order-lg-2">
+                    <img class="img-fluid" src="images/mask.png" alt="Layers Image">
+                </div>
                 <!-- Left column -->
-                <div id="mask-txt2" class="col-sm-11 col-lg-4">
+                <div id="mask-txt2" class="col-sm-11 col-lg-4 order-lg-1">
                     <h4>香港製造</h4>
                     <p>產地: 香港<br>
                     柴灣自設廠房，真正香港製造 </p>
@@ -110,9 +113,7 @@
                 </div>
                 
                 <!-- Right column -->
-                <div id="mask2" class="col-sm-11 col-lg-4">
-                    <img class="img-fluid" src="images/mask.png" alt="Layers Image">
-                </div>
+                
                 
             </div>
             
@@ -127,7 +128,7 @@
         <div class="pageCheckout" id="checkout">
             <div class="checkoutInfo container text-center">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-md-12 col-lg-6">
                         <h1>立即購買</h1><hr>
                         
                         <h5>此優惠只適用於學校、老師、家長教師會及團體訂購</h5><br>
@@ -138,7 +139,7 @@
                         <h3>或</h3>
                         <a type="button" onClick="showForm()" class="btn btn-secondary btn-lg" ><i class="fab fa-wpforms ml-1"></i> 網上訂購</a>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-md-12 col-lg-6">
                         <div class="container text-left" id="form">
                             <form>
                                 <div class="form-row">
@@ -171,8 +172,9 @@
                                     <div class="container col-6">
                                         <p id="perBox">0盒: $0</p>
                                         <p id="shipping">運費: $0</p>
-                                        <hr>
+                                        <hr id="checkoutHR">
                                         <p id="total">總額: $0</p>
+                                         <button type="button" onClick="showPayment()" href="#" class="btn btn-primary">付款</button>  
                                     </div>
 
                                     <div class="container col-6" id="payment">
@@ -193,7 +195,7 @@
                                 </div>
                                 
                             </form>
-                            <button onClick="showPayment()" href="#" class="btn btn-primary">付款</button>                                                       
+                                                                                
                         </div>
                     
                     </div>
@@ -211,7 +213,7 @@
                 <div class="col-5">
                     <img class="menuCM img-fluid" src="images/classmateLogo.png" alt="Classmate Logo">
                 </div>
-                <div class="col-5 contact">
+                <div class="col-7 contact">
                     <p>63750760</p><i class="fab fa-whatsapp ml-2"></i> <br>
                     <p>info@classmate.hk</p><i class="fa fa-envelope ml-2"></i>
                 </div>
