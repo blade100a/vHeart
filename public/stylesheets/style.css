@@ -129,7 +129,7 @@ Checkout Section CSS
 
 .pageCheckout{
     background-color: #e0e4f3;
-    height:100vh;
+    height:60vh;
     width:100%;
 }
 
@@ -137,9 +137,9 @@ Checkout Section CSS
     
 }
 
-.checkoutInfo .row{
+/* .checkoutInfo .row{
     height: 100vh;
-}
+} */
 
 .checkoutInfo .col{
     margin-top: auto;
