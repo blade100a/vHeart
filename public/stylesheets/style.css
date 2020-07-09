@@ -152,8 +152,7 @@ Checkout Section CSS
 }
 
 #payment, #form{
-    display: none;
-    
+    display: none;  
 }
 
 .cost{
@@ -195,7 +194,7 @@ Mobile
 
 */
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 576px){
     .menuCM{
         height: 40px;
         width: auto;
@@ -204,6 +203,76 @@ Mobile
     .menuVH{
         height: 40px;
         width: auto;
+    }
+
+    /* about */
+    .pageAbout{
+        background-color: #d4d6dd;
+        height:150vh;
+        width:100%;
+        color: #002A3A;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    
+    .pageAbout .row{
+        height: 70vh;
+        justify-content: center;
+    }
+    
+    .pageAbout img{
+        width: 300px;
+        height: auto;
+    }
+    
+    .pageAbout .col-sm-11{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .pageCheckout{
+        background-color: #e0e4f3;
+        height:100vh;
+        width:100%;
+    }
+    
+
+    /* checkout */
+    .checkoutInfo{
+        height: 100vh;
+    }
+    
+    /* .checkoutInfo .row{
+        
+    } */
+    
+    .checkoutInfo .col{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .pageCheckout{
+        padding-top: 10%;
+        height: 150vh;
+    }
+
+    .pageCheckout img{
+        width: 250px;
+        height: auto;
+    }
+    
+    #payment, #form{
+        display: none;  
+    }
+
+    footer .row{
+        height: 10vh;
+        justify-content: space-between;
+    }
+    
+    footer .col-5{
+        margin-top: auto;
+        margin-bottom: auto;
     }
     
 }
