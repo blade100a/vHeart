@@ -9,6 +9,10 @@ app.get("/", function(req, res){
     res.render("index");
 });
 
+app.get("/review", function(req, res){
+    res.render("review");
+});
+
 app.listen(8080, function(){
     console.log("Server is running");
 });
