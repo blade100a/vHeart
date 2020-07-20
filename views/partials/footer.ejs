@@ -1,0 +1,63 @@
+    <!-- Footer -->
+    <footer class="container">
+        <div class="row">
+            <div class="col-5">
+                <img class="menuCM img-fluid" src="images/classmateLogo.png" alt="Classmate Logo">
+            </div>
+            <div class="col-7 contact">
+                <p>63750760</p><i class="fab fa-whatsapp ml-2"></i> <br>
+                <p>info@classmate.hk</p><i class="fa fa-envelope ml-2"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script> 
+        $(document).ready(function () {
+            $('.group').hide();
+            $('#option1').show();
+            $('#methods').change(function () {
+            $('.group').hide();
+            $('#'+$(this).val()).show();
+            })
+        });
+    </script>
+    <script>
+        function showPayment() {
+            var x = document.getElementById("payment");
+            x.style.display = "block";
+        }
+    </script>
+    <script>
+        function showForm() {
+            var x = document.getElementById("form");
+            x.style.display = "block";
+        }
+    </script>
+    <script>
+        const input = document.querySelector('#inputQuantity');
+        const perBox = document.getElementById('perBox');
+        const shipping = document.getElementById('shipping');
+        const total = document.getElementById('total');
+
+        input.addEventListener('input', updateValue);
+
+        function updateValue(e) {
+            perBox.textContent = e.target.value +"盒: $" + e.target.value*130;
+            
+            if(e.target.value>0 && e.target.value<9){
+                shipping.textContent = "運費: $50";
+                total.textContent = "總額: $"+ (e.target.value*130+50) ;
+            }else{
+                shipping.textContent = "運費: $0";
+                total.textContent = "總額: $" + e.target.value*130;
+            }
+        }
+        
+        
+    </script>
+    </body>
+</html>
